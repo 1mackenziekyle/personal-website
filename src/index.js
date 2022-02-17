@@ -4,17 +4,20 @@ import "./index.css";
 import Home from "./Home";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import { Header, Contact, Projects } from "./components";
+import { Contact, Projects } from "./components";
+import { CssBaseline, ThemeProvider } from "@mui/material/";
+import customTheme from "./assets/theme";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />}>
+    <ThemeProvider theme={customTheme}>
+      <CssBaseline />
+      <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="projects" element={<Projects />} />
         <Route path="contact" element={<Contact />} />
-      </Route>
-    </Routes>
+      </Routes>
+    </ThemeProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );
