@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
-import { Typography, TextField, Button, Paper } from "@mui/material";
+import { Typography, TextField, Button, Paper, Box } from "@mui/material";
+import ForwardToInbox from "@mui/icons-material/ForwardToInbox";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -13,12 +14,12 @@ export default function Contact() {
   const handleFormChange = (e) => {
     // set form contents to update the target element to new value
     setFormContents((prevState) => ({
+      // set to previous state
       ...prevState,
+      // set new value ('itemName' : 'newItemValue')
       [e.target.name]: e.target.value,
     }));
   };
-
-  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -38,20 +39,22 @@ export default function Contact() {
         }
       );
 
+    // empty form
     setFormContents({ name: "", email: "", message: "" });
   };
 
   return (
     <>
-      <Paper component="div" elevation={3} sx={{ m: "5%", p: "30px" }}>
+      <Paper component="div" elevation={3} sx={{ px: "5%", py: "3%" }}>
         <Typography variant="h4" sx={{ mt: "10px" }}>
-          Contact Me!
+          contact me!
         </Typography>
-        <form ref={form} noValidate autoComplete="off" onSubmit={sendEmail}>
+        <form autoComplete="off" onSubmit={sendEmail}>
           <TextField
             variant="standard"
             fullWidth
-            label="Name"
+            required
+            label="name"
             sx={{ my: "10px" }}
             //
             id="name"
@@ -62,6 +65,7 @@ export default function Contact() {
           <TextField
             variant="standard"
             fullWidth
+            required
             label="email"
             sx={{ my: "10px" }}
             //
@@ -73,8 +77,9 @@ export default function Contact() {
           <TextField
             fullWidth
             multiline
+            required
             rows={4}
-            label="Message"
+            label="Send me a salute... (*-*)7"
             sx={{ mt: "30px", mb: "10px" }}
             //
             id="message"
@@ -82,8 +87,13 @@ export default function Contact() {
             value={formContents.message}
             onChange={handleFormChange}
           />
-          <Button type="submit" variant="contained" sx={{ my: "10px" }}>
-            Send
+          <Button
+            type="submit"
+            variant="contained"
+            sx={{ my: "10px", px: "10px" }}
+          >
+            deliver
+            <ForwardToInbox sx={{ height: "20px", ml: "5px" }} />
           </Button>
         </form>
       </Paper>

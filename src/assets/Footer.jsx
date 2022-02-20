@@ -9,10 +9,11 @@ export default function Footer() {
       <CssBaseline />
       <Grid
         container
+        py="30px"
         spacing={0}
         direction="column"
         alignItems="center"
-        justifyContent="center"
+        justifyContent="top"
         minHeight={80}
         sx={{ bgcolor: "LightGrey" }}
       >
