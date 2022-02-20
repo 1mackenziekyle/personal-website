@@ -1,6 +1,11 @@
 import React from "react";
 import { Box, Button, Typography, Grid } from "@mui/material";
 import Fade from "react-reveal/Fade";
+import ResumePDF from "../assets/Resume.pdf";
+
+function handleResumeClick() {
+  window.open(ResumePDF);
+}
 
 function Home() {
   return (
@@ -31,13 +36,23 @@ function Home() {
               and allow you to contact me here.
             </Typography>
           </Box>
-          <Box width="95%" m="2.5%">
+          <Box width="95%" mt="2.5%" mx="2.5%">
             <Button
               href="/personal-website/#/contact"
               variant="outlined"
               sx={{ width: "100%" }}
             >
               Contact
+            </Button>
+          </Box>
+
+          <Box width="95%" mt="2.5%" mx="2.5%">
+            <Button
+              onClick={handleResumeClick}
+              variant="contained"
+              sx={{ width: "100%" }}
+            >
+              View My Resume
             </Button>
           </Box>
         </div>
