@@ -1,18 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Home from "./Home";
 import reportWebVitals from "./reportWebVitals";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { Contact, Projects, Blog } from "./components/route";
+import { Home, Projects, Blog, Contact } from "./pages/route";
 import { CssBaseline, ThemeProvider } from "@mui/material/";
-import customTheme from "./assets/theme";
-import Header from "./assets/Header";
-import Footer from "./assets/Footer";
+import { Header, Footer, CustomTheme } from "./assets/route";
+// import customTheme from "./assets/theme";
 
 ReactDOM.render(
   <HashRouter basename="/">
-    <ThemeProvider theme={customTheme}>
+    <ThemeProvider theme={CustomTheme}>
       <CssBaseline />
       <Header />
       <Routes>
