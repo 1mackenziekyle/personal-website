@@ -38,22 +38,7 @@ export default function Contact() {
         }
       );
 
-    // emailjs
-    //   .sendForm(
-    //     "gmail",
-    //     "template_elyhsz7",
-    //     form.current,
-    //     "user_gLrvFEdtEwI5vqCJV5kF7"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
-    e.target.reset();
+    setFormContents({ name: "", email: "", message: "" });
   };
 
   return (
@@ -94,7 +79,7 @@ export default function Contact() {
             //
             id="message"
             name="message"
-            value={formContents.value}
+            value={formContents.message}
             onChange={handleFormChange}
           />
           <Button type="submit" variant="contained" sx={{ my: "10px" }}>

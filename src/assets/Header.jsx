@@ -24,7 +24,7 @@ export default function Header() {
         <AppBar position="static" elevation={2}>
           <Toolbar disableGutters>
             <RocketLaunchIcon />
-            <Link href="/" color="inherit" underline="none">
+            <Link href="/personal-website/#" color="inherit" underline="none">
               <Typography variant="h4" component="div">
                 Portfolio
               </Typography>
@@ -39,7 +39,7 @@ export default function Header() {
                   <Link
                     underline="none"
                     color="inherit"
-                    href={"/" + page.toLowerCase()}
+                    href={"/personal-website/#/" + page.toLowerCase()}
                   >
                     <Typography
                       variant="h6"

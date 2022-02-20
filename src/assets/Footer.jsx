@@ -34,6 +34,9 @@ export default function Footer() {
             See GitHub
           </Typography>
         </Link>
+        <Typography variant="p" component="div" fontSize={13} color="Grey" d>
+          v1.5
+        </Typography>
       </Grid>
     </React.Fragment>
   );
