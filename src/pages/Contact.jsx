@@ -81,7 +81,7 @@ export default function Contact() {
               multiline
               required
               rows={4}
-              label="Send me a salute... (*-*)7"
+              label="message"
               sx={{ mt: "30px", mb: "10px" }}
               //
               id="message"

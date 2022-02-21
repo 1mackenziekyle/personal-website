@@ -72,7 +72,7 @@ function Home() {
             </Typography>
           </Box>
           <Grid
-            px="10%"
+            px="30%"
             container
             justifyContent="space-between"
             alignItems="center"

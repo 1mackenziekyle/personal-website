@@ -2,10 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { Home, Projects, Blog, Contact } from "./pages/route";
 import { CssBaseline, ThemeProvider, Box } from "@mui/material/";
-import { Header, Footer, CustomTheme } from "./assets/route";
-// import customTheme from "./assets/theme";
+import {
+  Home,
+  Projects,
+  Blog,
+  Contact,
+  Header,
+  Footer,
+  CustomTheme,
+} from "./route";
 
 ReactDOM.render(
   <HashRouter basename="/">
