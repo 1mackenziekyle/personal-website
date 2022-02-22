@@ -6,37 +6,46 @@ import {
   Grid,
   IconButton,
   SvgIcon,
+  Stack,
 } from "@mui/material";
+import Typist from "react-typist";
 import Fade from "react-reveal/Fade";
 import ResumePDF from "../assets/Resume.pdf";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import SpotifyIcon from "../assets/spotify.svg";
 
 function handleResumeClick() {
   window.open(ResumePDF);
 }
 
+const alphabet = new String("abcdefghijklmnopqrstuvwxyz");
+
 function Home() {
   return (
     <>
-      <Fade top cascade duration={1000} distance="30px">
+      <Box mb={3} height={112}>
+        <Typography
+          variant="h1"
+          align="center"
+          fontWeight="600"
+          style={{
+            background:
+              "-webkit-linear-gradient(45deg, #FE6B8B 20%, #ffc042 90%)",
+            webkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          <Typist avgTypingDelay={200} cursor={{ show: false }}>
+            <Typist.Delay ms={1000} />
+            {"Hell" + alphabet.charAt(Math.floor(Math.random() * 27))}
+            <Typist.Backspace delay={1000} count={1} />
+            <Typist.Delay ms={500} />
+            o.
+          </Typist>
+        </Typography>
+      </Box>
+      <Fade top cascade duration={700} distance="30px">
         <div>
-          <Typography
-            variant="h1"
-            align="center"
-            fontWeight="600"
-            mb={3}
-            style={{
-              background:
-                "-webkit-linear-gradient(45deg, #FE6B8B 20%, #ffc042 90%)",
-              webkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            Hello.
-          </Typography>
-
           <Typography variant="h4" fontWeight="400" align="center" mb={3}>
             My name is Kyle.
           </Typography>
@@ -46,20 +55,22 @@ function Home() {
               and allow you to contact me here.
             </Typography>
           </Box>
-          <Box width="95%" mt="2.5%" mx="2.5%">
+          <Box width="50" mt="2.5%" mx="25%" alignItems="center">
             <Button
               href="/personal-website/#/contact"
               variant="outlined"
+              color="secondary"
               sx={{ width: "100%" }}
             >
               Contact
             </Button>
           </Box>
 
-          <Box width="95%" mt="2.5%" mx="2.5%" mb={6}>
+          <Box width="50%" mt="2.5%" mx="25%" mb={6}>
             <Button
               onClick={handleResumeClick}
               fontWeight={600}
+              color="secondary"
               variant="contained"
               sx={{ width: "100%", color: "white" }}
             >
@@ -71,26 +82,22 @@ function Home() {
               Look at my stuff:
             </Typography>
           </Box>
-          <Grid
-            px="30%"
-            container
-            justifyContent="space-between"
-            alignItems="center"
-          >
+
+          <Stack direction="row" spacing={2} justifyContent="center">
             <IconButton
               href="https://github.com/1mackenziekyle"
-              sx={{ color: "black" }}
+              color="secondary"
             >
               <GitHubIcon sx={{ fontSize: 40 }} />
             </IconButton>
             <IconButton
               href="https://ca.linkedin.com/in/kyle-mackenzie-url"
-              sx={{ color: "black" }}
+              color="secondary"
             >
               <LinkedInIcon sx={{ fontSize: 40 }} />
             </IconButton>
             <IconButton
-              sx={{ color: "black" }}
+              color="secondary"
               href="https://open.spotify.com/user/1mackenziekyle?si=b667776a6e76427e"
             >
               <SvgIcon viewBox="0 0 64 64" sx={{ fontSize: 40 }}>
@@ -99,9 +106,7 @@ function Home() {
                 </svg>
               </SvgIcon>
             </IconButton>
-
-            {/*  */}
-          </Grid>
+          </Stack>
         </div>
       </Fade>
     </>
