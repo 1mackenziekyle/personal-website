@@ -18,7 +18,7 @@ function handleResumeClick() {
   window.open(ResumePDF);
 }
 
-const alphabet = new String("abcdefghijklmnopqrstuvwxyz");
+const alphabet = new String("pkjui9;[");
 
 function Home() {
   return (
@@ -35,12 +35,14 @@ function Home() {
             WebkitTextFillColor: "transparent",
           }}
         >
-          <Typist avgTypingDelay={200} cursor={{ show: false }}>
-            <Typist.Delay ms={1000} />
-            {"Hell" + alphabet.charAt(Math.floor(Math.random() * 27))}
-            <Typist.Backspace delay={1000} count={1} />
+          <Typist avgTypingDelay={100} cursor={{ show: false }}>
+            <Typist.Delay ms={750} />
+            {"Hell" + alphabet.charAt(Math.floor(Math.random() * 7)) + "."}
             <Typist.Delay ms={500} />
-            o.
+            <Typist.Backspace delay={200} count={2} />
+            <Typist.Delay ms={500} />
+            o
+            <Typist.Delay ms={200} />.
           </Typist>
         </Typography>
       </Box>
