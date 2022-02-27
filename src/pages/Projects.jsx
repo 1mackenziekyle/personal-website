@@ -26,7 +26,7 @@ export default function Projects() {
             title="Collision Map"
             subheader="React App"
             imgSrc="../assets/map.png"
-            caption="Developed a React app for a demo at ICBC for a potential new project."
+            caption="Developed a React app for a demo during my co-op at ICBC for a potential new project."
             imgHeight={100}
             ghLink="https://1mackenziekyle.github.io/icbc-2-weeker/"
             displayGithub={true}
@@ -37,7 +37,7 @@ export default function Projects() {
             title="Graph Data Structure Analysis"
             subheader="Java Project"
             imgSrc="../assets/map.png"
-            caption="Created a social network-inspired graph data structure from interaction records between users, and implemented BFS, DFS, shortest path algorithms."
+            caption="Created a social network-inspired graph data structure from a text file documenting interactions between users, and implemented BFS, DFS, shortest path algorithms."
             imgHeight={100}
             displayGithub={true}
             ghLink="https://github.com/1mackenziekyle/Graph-Data-Structure-Analysis"

@@ -16,7 +16,7 @@ import Fade from "react-reveal/Fade";
 import { CreateTheme } from "@mui/material/styles";
 
 export default function Header() {
-  const pages = ["Projects", "Interests", "Contact"];
+  const pages = ["Projects", "Contact"];
 
   return (
     <React.Fragment>
