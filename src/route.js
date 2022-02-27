@@ -1,7 +1,7 @@
 // Pages
 export { default as Projects } from "./pages/Projects";
 export { default as Contact } from "./pages/Contact";
-export { default as Blog } from "./pages/Blog";
+export { default as Interests } from "./pages/Interests";
 export { default as Home } from "./pages/Home";
 
 // Components

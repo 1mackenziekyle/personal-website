@@ -6,7 +6,7 @@ import { CssBaseline, ThemeProvider, Box } from "@mui/material/";
 import {
   Home,
   Projects,
-  Blog,
+  Interests,
   Contact,
   Header,
   Footer,
@@ -24,7 +24,7 @@ ReactDOM.render(
           <Route exact path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/Interests" element={<Interests />} />
         </Routes>
       </Box>
       <Footer />

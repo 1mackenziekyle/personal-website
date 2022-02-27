@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, CssBaseline, Grid, Link } from "@mui/material";
 
 export default function Footer() {
-  const pages = ["Projects", "Blog", "Contact"];
+  const pages = ["Projects", "Interests", "Contact"];
 
   return (
     <React.Fragment>

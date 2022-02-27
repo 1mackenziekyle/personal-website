@@ -18,7 +18,9 @@ function handleResumeClick() {
   window.open(ResumePDF);
 }
 
-const alphabet = new String("pkjui9;[");
+const alphabet = new String("pkjut9;[");
+
+const randomFloat = Math.random();
 
 function Home() {
   return (
@@ -35,18 +37,23 @@ function Home() {
             WebkitTextFillColor: "transparent",
           }}
         >
-          <Typist avgTypingDelay={100} cursor={{ show: false }}>
+          <Typist
+            avgTypingDelay={100}
+            stdTypingDelay={50}
+            cursor={{ show: false }}
+          >
             <Typist.Delay ms={750} />
             {"Hell" + alphabet.charAt(Math.floor(Math.random() * 7)) + "."}
             <Typist.Delay ms={500} />
-            <Typist.Backspace delay={200} count={2} />
+            <Typist.Backspace delay={200} />
+            <Typist.Backspace delay={50} />
             <Typist.Delay ms={500} />
             o
             <Typist.Delay ms={200} />.
           </Typist>
         </Typography>
       </Box>
-      <Fade top cascade duration={700} distance="30px">
+      <Fade top cascade duration={700} delay={1700} distance="30px">
         <div>
           <Typography variant="h4" fontWeight="400" align="center" mb={3}>
             My name is Kyle.

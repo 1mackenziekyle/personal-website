@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Blog() {
+export default function Interests() {
   return (
     <>
       <p>Coming soon...</p>
