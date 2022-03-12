@@ -54,13 +54,15 @@ export default function Projects() {
         </Grid>
         <Grid item xs={8} md={6} lg={4} p="1%">
           <ProjectCard
-            title="Dynamic To-Do List"
-            subheader="Web app created using EJS & CSS."
+            title="Cover Letter Generator Bot"
+            subheader="Web-scraping Project"
             imgSrc="../assets/map.png"
-            caption="Created a web app to display a to-do list and save state across refreshes and on closing and reopening. This was created in EJS, a language similar to JSX, with the help of the Udemy 'Complete 2021 Web Development Bootcamp' course."
+            caption="Developed a program to scrape my school's job postings, and then used JavaScript to sort the jobs by full-stack, front-end, and back-end, and generated cover letters for each of them."
             imgHeight={100}
             displayGithub={true}
-            ghLink="https://github.com/1mackenziekyle/todolist"
+            ghLink="https://github.com/1mackenziekyle/cover-letters"
+            displayYouTube={true}
+            ytLink="https://www.youtube.com/watch?v=SVqlR_FcmrA"
           />
         </Grid>
         <Grid item xs={8} md={6} lg={4} p="1%">

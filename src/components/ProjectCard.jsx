@@ -9,12 +9,25 @@ import {
   IconButton,
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 function GithubButton(props) {
   if (props.isDisplayed) {
     return (
       <IconButton color="secondary" href={props.ghLink}>
         <GitHubIcon />
+      </IconButton>
+    );
+  } else {
+    return null;
+  }
+}
+
+function YouTubeButton(props) {
+  if (props.isDisplayed) {
+    return (
+      <IconButton color="secondary" href={props.ytLink}>
+        <YouTubeIcon style={{ fontSize: "2rem" }} />
       </IconButton>
     );
   } else {
@@ -38,6 +51,10 @@ export default function ProjectCard(props) {
           <GithubButton
             isDisplayed={props.displayGithub}
             ghLink={props.ghLink}
+          />
+          <YouTubeButton
+            isDisplayed={props.displayYouTube}
+            ytLink={props.ytLink}
           />
         </CardContent>
       </Card>
