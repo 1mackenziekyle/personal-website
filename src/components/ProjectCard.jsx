@@ -38,7 +38,7 @@ function YouTubeButton(props) {
 export default function ProjectCard(props) {
   return (
     <Box width="100%">
-      <Card variant="outlined">
+      <Card variant="outlined" sx={{ boxShadow: 4 }}>
         <CardHeader title={props.title} subheader={props.subheader} />
         {/* <CardMedia
           component="img"

@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import ProjectCard from "../components/ProjectCard";
 import Typist from "react-typist";
+import Fade from "react-reveal/Fade";
 
 export default function Projects() {
   return (
@@ -23,6 +24,43 @@ export default function Projects() {
       >
         <Grid item xs={8} md={6} lg={4} p="1%">
           <ProjectCard
+            title="Cover Letter Generator Bot"
+            subheader="Python and JavaScript Project"
+            imgSrc="../assets/map.png"
+            caption="Developed a program to scrape my school's job board website, and then used JavaScript to sort the jobs by full-stack, front-end, and back-end, and generated cover letters for each of them."
+            imgHeight={100}
+            displayGithub={true}
+            ghLink="https://github.com/1mackenziekyle/cover-letters"
+            displayYouTube={true}
+            ytLink="https://www.youtube.com/watch?v=SVqlR_FcmrA"
+          />
+        </Grid>
+        <Grid item xs={8} md={6} lg={4} p="1%">
+          <Fade top cascade duration={1000} distance="10px">
+            <ProjectCard
+              title="Graph Data Structure Analysis"
+              subheader="Java Project"
+              imgSrc="../assets/map.png"
+              caption="Created a social network-inspired graph data structure from a text file documenting interactions between users, and implemented BFS, DFS, shortest path algorithms."
+              imgHeight={100}
+              displayGithub={true}
+              ghLink="https://github.com/1mackenziekyle/Graph-Data-Structure-Analysis"
+            />
+          </Fade>
+        </Grid>
+        <Grid item xs={8} md={6} lg={4} p="1%">
+          <ProjectCard
+            title="Plagiarism Detector"
+            subheader="Java Project"
+            imgSrc="../assets/map.png"
+            caption="Developed an algorithm to detect plagiarism by calculating similarity between two documents"
+            displayGithub={true}
+            ghLink="https://github.com/1mackenziekyle/Plagiarism-Detector"
+            imgHeight={100}
+          />
+        </Grid>
+        <Grid item xs={8} md={6} lg={4} p="1%">
+          <ProjectCard
             title="Collision Map"
             subheader="React App"
             imgSrc="../assets/map.png"
@@ -30,17 +68,6 @@ export default function Projects() {
             imgHeight={100}
             ghLink="https://1mackenziekyle.github.io/icbc-2-weeker/"
             displayGithub={true}
-          />
-        </Grid>
-        <Grid item xs={8} md={6} lg={4} p="1%">
-          <ProjectCard
-            title="Graph Data Structure Analysis"
-            subheader="Java Project"
-            imgSrc="../assets/map.png"
-            caption="Created a social network-inspired graph data structure from a text file documenting interactions between users, and implemented BFS, DFS, shortest path algorithms."
-            imgHeight={100}
-            displayGithub={true}
-            ghLink="https://github.com/1mackenziekyle/Graph-Data-Structure-Analysis"
           />
         </Grid>
         <Grid item xs={8} md={6} lg={4} p="1%">
@@ -54,37 +81,12 @@ export default function Projects() {
         </Grid>
         <Grid item xs={8} md={6} lg={4} p="1%">
           <ProjectCard
-            title="Cover Letter Generator Bot"
-            subheader="Web-scraping Project"
-            imgSrc="../assets/map.png"
-            caption="Developed a program to scrape my school's job postings, and then used JavaScript to sort the jobs by full-stack, front-end, and back-end, and generated cover letters for each of them."
-            imgHeight={100}
-            displayGithub={true}
-            ghLink="https://github.com/1mackenziekyle/cover-letters"
-            displayYouTube={true}
-            ytLink="https://www.youtube.com/watch?v=SVqlR_FcmrA"
-          />
-        </Grid>
-        <Grid item xs={8} md={6} lg={4} p="1%">
-          <ProjectCard
             title="Electric Car Firmware Module"
             subheader="Firmware for STM32 board."
             imgSrc="../assets/map.png"
             caption="Developed firmware for a board that received CAN messages and converted into USART and transmitted to a cellular transmitter."
             displayGithub={true}
             ghLink="https://github.com/1mackenziekyle/xbee3"
-            imgHeight={100}
-          />
-        </Grid>
-
-        <Grid item xs={8} md={6} lg={4} p="1%">
-          <ProjectCard
-            title="Plagiarism Detector"
-            subheader="Java Project"
-            imgSrc="../assets/map.png"
-            caption="Developed an algorithm to detect plagiarism by calculating similarity between two documents"
-            displayGithub={true}
-            ghLink="https://github.com/1mackenziekyle/Plagiarism-Detector"
             imgHeight={100}
           />
         </Grid>

@@ -32,7 +32,7 @@ function Home() {
           fontWeight="600"
           style={{
             background:
-              "-webkit-linear-gradient(45deg, #FE6B8B 20%, #ffc042 90%)",
+              "-webkit-linear-gradient(45deg, #bf19b7 20%, #4f66ab 90%)",
             webkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}
