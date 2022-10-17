@@ -26,17 +26,7 @@ function Home() {
   return (
     <>
       <Box mb={3} height={112}>
-        <Typography
-          variant="h1"
-          align="center"
-          fontWeight="600"
-          style={{
-            background:
-              "-webkit-linear-gradient(45deg, #bf19b7 20%, #4f66ab 90%)",
-            webkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
-        >
+        <Typography variant="h1" align="center" fontWeight="600">
           <Typist
             avgTypingDelay={100}
             stdTypingDelay={50}

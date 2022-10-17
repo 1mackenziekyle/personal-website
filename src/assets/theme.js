@@ -1,7 +1,14 @@
 import { createTheme } from "@mui/material";
-import { indigo, blue, yellow, deepOrange, grey } from "@mui/material/colors";
+import {
+  indigo,
+  blue,
+  white,
+  yellow,
+  deepOrange,
+  grey,
+} from "@mui/material/colors";
 
-const primary = indigo[400];
+const primary = grey[50];
 const secondary = grey[900];
 const warning = deepOrange[400];
 

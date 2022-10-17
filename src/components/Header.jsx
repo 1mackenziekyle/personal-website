@@ -36,7 +36,7 @@ export default function Header() {
             </Link>
             <Grid container justifyContent="flex-start">
               {pages.map((page) => (
-                <Box style={{ color: "white" }} sx={{ ml: "5%" }}>
+                <Box style={{ color: "#000" }} sx={{ ml: "5%" }}>
                   <MenuItem key={page} sx={{ borderRadius: 2 }}>
                     <Link
                       underline="none"
