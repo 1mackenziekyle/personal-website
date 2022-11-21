@@ -9,7 +9,7 @@ import {
 } from "@mui/material/colors";
 
 const primary = grey[50];
-const secondary = grey[900];
+const secondary = indigo[300];
 const warning = deepOrange[400];
 
 const customTheme = createTheme({
