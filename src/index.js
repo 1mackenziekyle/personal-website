@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider, Box } from "@mui/material/";
-import { Home, Projects, Contact, Header, Footer, CustomTheme } from "./route";
+import { Home, Projects, Blog, Contact, Header, Footer, CustomTheme } from "./route";
 
 ReactDOM.render(
   <HashRouter basename="/">
@@ -16,6 +16,7 @@ ReactDOM.render(
           <Route exact path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog /> } />
         </Routes>
       </Box>
       <Footer />
