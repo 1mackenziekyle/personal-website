@@ -23,6 +23,9 @@ const customTheme = createTheme({
     warning: {
       main: warning,
     },
+    text: {
+      primary: grey[800],
+    },
   },
 });
 

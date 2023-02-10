@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import Typist from "react-typist";
 import Fade from "react-reveal/Fade";
-import ResumePDF from "../assets/Resume.pdf";
+import ResumePDF from "../assets/resume.pdf";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 

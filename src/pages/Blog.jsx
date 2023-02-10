@@ -7,9 +7,9 @@ import Fade from "react-reveal/Fade";
 export default function Blog() {
   const blogposts = [
     {
-      title: "Blog Post 1",
+      title: "My First Blog Post Ever",
       date: "2023-02-10",
-      content: "Starting this blog today! I'm excited to see where it goes. This was generated mostly by GitHub Copilot. Lol."
+      content: "Starting this blog today! I'm excited to see where it goes. This post was generated mostly by GitHub Copilot. Lol."
     }
   ];
 

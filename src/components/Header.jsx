@@ -12,6 +12,7 @@ import {
   ButtonBase,
   Link,
 } from "@mui/material";
+import { grey } from "@mui/material/colors";
 import Fade from "react-reveal/Fade";
 import { CreateTheme } from "@mui/material/styles";
 
@@ -30,7 +31,12 @@ export default function Header() {
               underline="none"
               sx={{ ml: "5%" }}
             >
-              <Typography variant="h4" component="div" fontWeight="600">
+              <Typography
+                variant="h4"
+                component="div"
+                color="#444444"
+                fontWeight="600"
+              >
                 Portfolio
               </Typography>
             </Link>
@@ -41,7 +47,7 @@ export default function Header() {
                     <Link
                       underline="none"
                       focusVisible
-                      color="inherit"
+                      color="#555555"
                       href={"/personal-website/#/" + page.toLowerCase()}
                     >
                       <Typography
