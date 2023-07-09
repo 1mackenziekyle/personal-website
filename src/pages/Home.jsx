@@ -39,6 +39,8 @@ function Home() {
             <Typist.Backspace delay={50} />
             <Typist.Delay ms={500} />
             o
+            <Typist.Delay ms={500} />
+            {" :)"}
             <Typist.Delay ms={200} />.
           </Typist>
         </Typography>
